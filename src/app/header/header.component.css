@@ -1,0 +1,12 @@
+ul{    
+    display: inline-block;
+    width: 100%;
+    background-color: #e6e0e0;
+    padding: 20px;
+    border: red solid 1px;
+    border-radius: 5px;
+}
+ul>li{
+    width: 120px;
+    float: left;
+}

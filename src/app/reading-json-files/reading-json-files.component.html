@@ -1,0 +1,28 @@
+<h2>{{title}}</h2>
+
+
+<table>
+    
+</table>
+
+
+<table class="table">
+<thead>
+    <tr>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Quantity</th>
+    <th>Somme</th>
+    <th>Lien</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let product of products">
+        <td> {{ product?.name }} </td>
+        <td> {{ product?.price }} : {{isBig(product?.price)}} </td>
+        <td> {{ product?.quantity }} </td>
+        <td> {{ somme((product?.price), (product?.quantity)) }} </td>
+        <td><a href="{{ product?.imageUrl }}" target="_black" > {{ nameHi(product?.name) }}</a> </td>
+    </tr>
+</tbody>
+</table>
