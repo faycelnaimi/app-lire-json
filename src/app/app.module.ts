@@ -9,13 +9,19 @@ import { ListeComponent } from './liste/liste.component';
 import { ReadingJsonFilesComponent } from './reading-json-files/reading-json-files.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { ApilireComponent } from './apilire/apilire.component';
+
+import { User } from './class/users';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ListeComponent,
-    ReadingJsonFilesComponent
+    ReadingJsonFilesComponent,
+    ApilireComponent
   ],
   imports: [
     BrowserModule,

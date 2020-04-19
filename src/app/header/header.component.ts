@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
   menu = ['Accueil', 'Presentaion', 'Service', 'Contact'];
 
 
-  myHero = this.menu[2];
+  
 
   constructor() { }
 

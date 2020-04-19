@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ReadapiService } from "./readapi.service";
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
+  users: any = [];
+
+constructor(private readapiService : ReadapiService){}
+
+
+
+
   title = 'my-app';
 }
