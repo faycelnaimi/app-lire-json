@@ -11,8 +11,12 @@ import { ReadingJsonFilesComponent } from './reading-json-files/reading-json-fil
 import { HttpClientModule } from '@angular/common/http';
 import { ApilireComponent } from './apilire/apilire.component';
 
-import { User } from './class/users';
+import { ReadapiService } from './readapi.service';
 
+import { User } from './class/users';
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { AdduserComponent } from './adduser/adduser.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,14 +25,17 @@ import { User } from './class/users';
     HeaderComponent,
     ListeComponent,
     ReadingJsonFilesComponent,
-    ApilireComponent
+    ApilireComponent,
+    UserDetailComponent,
+    AdduserComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
     ],
-  providers: [],
+  providers: [ReadapiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

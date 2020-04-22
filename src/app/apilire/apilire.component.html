@@ -1,15 +1,11 @@
 <h2>Liste des elements de API Spring Boot</h2>
 
 <ul *ngFor="let user of users">
- <li>  {{ user.id }} - {{ user.name }} : Age {{ user.age }} : Salaire {{ user.salary }}$ <button (click)="getOne(user.id)"> --> voir </button></li>
+ <li>  {{ user.id }} - {{ user.name }} : Age {{ user.age }} : Salaire {{ user.salary }}$ 
+     <button (click)="getOne(user.id)"> voir </button>
+     <a class="lien1" routerLink="/detailuser/{{user.id}}"> + voir </a>
+</li>
 </ul>
 
 
 <hr>
-
-
-
-
-
-
-

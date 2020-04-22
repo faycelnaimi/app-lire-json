@@ -1,3 +1,18 @@
+.header{
+    background-image: url(/assets/img/header.jpg);
+    padding: 20px 0;
+    background-position: center center;
+    background-size: cover;
+}
+.header p {
+    color: #ff0016;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    background-color: #fff9;
+    text-align: center;
+}
 ul{    
     display: inline-block;
     width: 100%;
@@ -7,6 +22,6 @@ ul{
     border-radius: 5px;
 }
 ul>li{
-    width: 120px;
+    width: 200px;
     float: left;
 }

@@ -10,8 +10,6 @@ export class HeaderComponent implements OnInit {
   menu = ['Accueil', 'Presentaion', 'Service', 'Contact'];
 
 
-  
-
   constructor() { }
 
   ngOnInit() {

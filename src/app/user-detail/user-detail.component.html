@@ -1,0 +1,10 @@
+<h2>user-detail</h2>
+
+contenu {{ user | json }}
+
+<div class="contenu" *ngIf="user">
+    <p>Id : {{user.id}}</p>
+    <p>name: {{ user.name }}</p>
+    <p>age: {{ user.age }}</p>
+    <p>salar: {{ user.salary }}</p>
+</div>
